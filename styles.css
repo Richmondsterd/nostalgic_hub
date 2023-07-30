@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8fe;
+  color: #333;
+}
+
+nav {
+  background-color: #1c69db;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1c69db;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px 0;
+  background-color: #1c69db;
+  color: #fff;
+}
+
+/* Animation using keyframes */
+@keyframes bloomAnimation {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+/* Class to apply animation */
+.bloom {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('bloom.png');
+  background-size: contain;
+  animation: bloomAnimation 3s linear infinite;
+}
+img {
+  width: 75%;
+  height: 75%;
+}
+
